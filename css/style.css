@@ -913,6 +913,7 @@ body._touch .menu__list li._active .menu__arrow::before {
 }
 
 .reviews__datename {
+  max-width: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
