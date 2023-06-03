@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230603100501">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230603160145">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,11 +27,10 @@
 								<span class="menu__arrow"></span>
 								<ul class="menu__sub-list">
 									<li class="menu__sub-link"><a href="freight-transportation.html" class="menu__sub-link">Грузовые перевозки</a></li>
-									<li class="menu__sub-link"><a href="" class="menu__sub-link">Квартирный переезд</a></li>
-									<li class="menu__sub-link"><a href="" class="menu__sub-link">Офисный переезд</a></li>
-									<li class="menu__sub-link"><a href="" class="menu__sub-link">Перевозка бытовой техники и мебели</a></li>
-									<li class="menu__sub-link"><a href="" class="menu__sub-link">Услуги грузчика</a></li>
-									<li class="menu__sub-link"><a href="" class="menu__sub-link">Такелажные услуги</a></li>
+									<li class="menu__sub-link"><a href="apartment-moving.html" class="menu__sub-link">Квартирный переезд</a></li>
+									<li class="menu__sub-link"><a href="office-moving.html" class="menu__sub-link">Офисный переезд</a></li>
+									<li class="menu__sub-link"><a href="furniture-transportation.html" class="menu__sub-link">Перевозка бытовой техники и мебели</a></li>
+									<li class="menu__sub-link"><a href="movers.html" class="menu__sub-link">Услуги грузчика</a></li>
 								</ul>
 							</li>
 							<li class="menu__item"><a href="reviews.html" class="menu__link">Отзывы</a></li>
@@ -39,7 +38,7 @@
 						</ul>
 					</nav>
 				</div>
-				<button class="header__button button">Заказать звонок</button>
+				<button data-popup="#popup" class="header__button button">Заказать звонок</button>
 			</div>
 		</header>
 		<main class="page">
@@ -151,17 +150,51 @@
 			</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<h2 class="popup__title title">
+						Давайте обсудим ваш переезд!
+					</h2>
+					<h3 class="popup__subtitle subtitle">Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
+					<div class="popup__form">
+						<form data-dev action="#" data-popup-message="#popup-submit" method="POST" id="form" class="form__body">
+							<div class="form__item">
+								<input required type="text" autocomplete="off" placeholder="Имя" name="name" class="form__input" id="formName">
+								<span class="form__line"></span>
+							</div>
+							<div class="form__item">
+								<input required type="tel" autocomplete="off" placeholder="Ваш телефон" name="tel" class="form__input" id="formPhone">
+								<span class="form__line"></span>
+							</div>
+							<div class="checkbox">
+								<input required id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input">
+								<label for="formAgreement" class="form__label"><span>Я даю согласие на обработку персональных данных</span></label>
+							</div>
+							<button type="submit" class="form__button button">Оставить заявку</button>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20230603100501"></script>
+
+	<div id="popup-submit" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<h2 class="popup__title subtitle">Ваша заявка принята</h2>
+					<h3 class="popup-send__subtitle subtitle">Спасибо что выбрали нашу компанию “Ваш переезд”
+						Ваш груз в надежных руках</h3>
+					<a href="index.html" class="popup__button button">Вернуться на главную </a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230603160145"></script>
 </body>
 
 </html>
