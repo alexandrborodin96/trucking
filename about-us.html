@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230603201928">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230605142315">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -125,10 +125,10 @@
 						<h4>gruz.pereezd.dp@gmail.com</h4>
 					</div>
 					<div class="footer__contacts contacts">
-						<a href="#" class="footer__phone-icon phone-icon"><img src="img/icons/phone.svg" alt="phone-icon"></a>
+						<div href="#" class="footer__phone-icon phone-icon"><img src="img/icons/phone.svg" alt="phone-icon"></div>
 						<div class="footer__number number">
-							<h3>+380 95 791 54 91</h3>
-							<h3>+380 96 791 54 91</h3>
+							<a href="tel:+380957915491">+380 95 791 54 91</href=>
+								<a href="tel:+380967915491">+380 96 791 54 91</a>
 						</div>
 					</div>
 					<div class="footer__icons icons">
@@ -148,6 +148,28 @@
 					<h3 class="footer__confidentiality">© Все права защищены</h3>
 				</div>
 			</div>
+
+			<div class="multibutton">
+				<a href="#" id="popup__toggle" onclick="return false;">
+					<div class="circlephone" style="transform-origin: center;"></div>
+					<div class="circle-fill" style="transform-origin: center;"></div>
+					<div class="img-circle" style="transform-origin: center;">
+						<div class="img-circleblock" style="transform-origin: center;"></div>
+					</div>
+				</a>
+				<ul class="multibutton__list">
+					<li class="multibutton__item">
+						<h3 class="multibutton__subtitle subtitle">Позвонить нам:</h3>
+					</li>
+					<li class="multibutton__item">
+						<a href="tel:+380967915491" class="multibutton__title">+380 96 791 54 91</a>
+					</li>
+					<li class="multibutton__item">
+						<a href="tel:+380957915491" class="multibutton__title">+380 95 791 54 91</a>
+					</li>
+				</ul>
+			</div>
+
 		</footer>
 	</div>
 	<div id="popup" aria-hidden="true" class="popup">
@@ -194,7 +216,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230603201928"></script>
+	<script src="js/app.min.js?_v=20230605142315"></script>
 </body>
 
 </html>

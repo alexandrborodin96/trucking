@@ -250,7 +250,6 @@
                     tabTitle.classList.add("_tab-active");
                     setTabsStatus(tabsBlock);
                 }
-                e.preventDefault();
             }
         }
     }
@@ -3996,7 +3995,10 @@
                 delay: 4e3,
                 disableOnInteraction: true
             },
+            simulateTouch: false,
             loop: true,
+            preloadImages: false,
+            lazy: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true
@@ -4013,8 +4015,7 @@
                 700: {
                     slidesPerView: 1
                 }
-            },
-            on: {}
+            }
         });
     }
     window.addEventListener("load", (function(e) {
