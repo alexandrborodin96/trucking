@@ -403,7 +403,7 @@ body::after {
   gap: 13px;
 }
 
-.contacts .number h3 {
+.contacts .number a {
   font-weight: 300;
   font-size: 24px;
 }
@@ -726,6 +726,21 @@ body::after {
   font-size: 18px;
 }
 
+.header__number {
+  max-width: 202px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 13px;
+}
+
+.header__number a {
+  font-weight: 400;
+  font-size: 19px;
+}
+
 ._header-scroll {
   margin-top: 0rem;
 }
@@ -893,10 +908,10 @@ body._touch .menu__list li._active .menu__arrow::before {
 .footer__email h2 {
   font-weight: 500;
   font-size: 18px;
+  margin-bottom: 0.75rem;
 }
 
-.footer__email h4 {
-  margin-top: 0.75rem;
+.footer__email a {
   font-weight: 300;
   font-size: 18px;
 }
@@ -1533,10 +1548,10 @@ body._touch .menu__list li._active .menu__arrow::before {
 .contact__email h2 {
   font-weight: 500;
   font-size: 18px;
+  margin-bottom: 0.75rem;
 }
 
-.contact__email h4 {
-  margin-top: 0.75rem;
+.contact__email a {
   font-weight: 300;
   font-size: 18px;
 }
@@ -3304,8 +3319,12 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 500px) {
-  .contacts .number h3 {
+  .contacts .number a {
     font-size: 18px;
+  }
+
+  .header__number a {
+    font-size: 16px;
   }
 
   .footer {
